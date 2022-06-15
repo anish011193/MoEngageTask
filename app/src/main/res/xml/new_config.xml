@@ -1,0 +1,13 @@
+<data-extraction-rules>
+    <cloud-backup>
+        ...
+        <exclude domain="database" path="MOEInteractions"/>
+        <exclude domain="sharedpref" path="pref_moe.xml"/>
+    </cloud-backup>
+    <device-transfer>
+        ...
+        <exclude domain="database" path="MOEInteractions"/>
+        <exclude domain="sharedpref" path="pref_moe.xml"/>
+        ...
+    </device-transfer>
+</data-extraction-rules>

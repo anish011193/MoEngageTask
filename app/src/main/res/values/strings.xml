@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MoEnagae Task</string>
+    <string name="default_notification_channel_id">1</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="emailID">Email ID</string>
+    <string name="userName">UserName</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="toLogin">Existing User? Login here</string>
+    <string name="toSignUp">New User? Sign Up here</string>
+    <string name="collection_users">Users</string>
+    <string name="action_sign_out">Sign Out</string>
+</resources>
