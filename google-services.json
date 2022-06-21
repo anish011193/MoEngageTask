@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "193109049797",
+    "project_id": "moenagaefirstapp",
+    "storage_bucket": "moenagaefirstapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193109049797:android:6b5f51ebd2d81a1ca3cbac",
+        "android_client_info": {
+          "package_name": "com.example.moenagaefirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193109049797-vmu18cfc3k3b7sibjbmhq0cajkcqmq3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxXCj9LvH705E2ZmLh6id_EiCCK04i6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193109049797-vmu18cfc3k3b7sibjbmhq0cajkcqmq3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193109049797:android:bcbf42f9c9ca429da3cbac",
+        "android_client_info": {
+          "package_name": "com.example.moengagetask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193109049797-vmu18cfc3k3b7sibjbmhq0cajkcqmq3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsxXCj9LvH705E2ZmLh6id_EiCCK04i6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193109049797-vmu18cfc3k3b7sibjbmhq0cajkcqmq3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

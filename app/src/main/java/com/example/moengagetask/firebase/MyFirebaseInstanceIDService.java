@@ -15,8 +15,11 @@ import androidx.core.app.NotificationCompat;
 
 import com.example.moengagetask.R;
 import com.example.moengagetask.activity.MainActivity;
+import com.example.moengagetask.utils.Constant;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import com.moengage.firebase.MoEFireBaseHelper;
+import com.moengage.pushbase.MoEPushHelper;
 
 public class MyFirebaseInstanceIDService extends FirebaseMessagingService {
     private static final String TAG = "MyFirebaseIIDService";
@@ -25,13 +28,17 @@ public class MyFirebaseInstanceIDService extends FirebaseMessagingService {
     public void onNewToken(String refreshedToken) {
         super.onNewToken(refreshedToken);
         Log.e(TAG, "Refreshed token: " + refreshedToken);
+        Constant.pushToken = refreshedToken;
+        MoEFireBaseHelper.getInstance().passPushToken(this,refreshedToken);
     }
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         Log.e("onMessageReceived", "onMessageReceived");
 
-        if (remoteMessage.getData().size() > 0) {
+        if(MoEPushHelper.getInstance().isFromMoEngagePlatform(remoteMessage.getData())) {
+            MoEFireBaseHelper.Companion.getInstance().passPushPayload(getApplicationContext(), remoteMessage.getData());
+        } else if(remoteMessage.getData().size() > 0) {
             sendNotification(remoteMessage.getData().get("title"), remoteMessage.getData().get("message"));
         }
     }
