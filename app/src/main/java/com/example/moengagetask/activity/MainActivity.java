@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.moengagetask.R;
@@ -69,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
                     user = task.getResult().toObject(User.class);
                     if(user!=null) {
                         setTitle("Welcome to MoEngage, "+user.getUsername());
+                        TextView tvUserName = findViewById(R.id.txtUserName);
+                        tvUserName.setText("Hello "+user.getUsername()+"\n" + user.getEmail());
                         //MoEngage Track User Attributes
                         setMoEngageTrackUserAttributes();
                         //MoEnagage Track Events
